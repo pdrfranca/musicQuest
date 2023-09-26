@@ -1,115 +1,226 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Manrope';
-    color: #fff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope";
+  color: #fff;
+}
+
+.red {
+  color: #dc143c;
+}
+
+.yellow {
+  color: #ffe600;
+}
+
+.blue {
+  color: #9fffea;
+}
+
+.orange {
+  color: #ff9028;
 }
 
 i {
-    font-size: 1.5em;
+  font-size: 1.5em;
+  cursor: pointer;
 }
 
-.active {
-    color: #dc143c;
+h3 {
+  font-size: 1.5em;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #00ff48;
+  border-radius: 2px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+}
+
+input[type="submit"] {
+  margin-top: 30px;
+  background-color: #00ff48;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #1a1a1a;
 }
 
 .none {
-    display: none;
+  display: none;
 }
 
 .flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .space {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 4vw;
 }
 
 body {
-    background-color: #000;
-    position: relative;
-    display: flex;
-    width: 100vw;
-    min-height: 100vh;
-    overflow-x: hidden;
-    justify-content: center;
-    align-items: center;
+  background-color: #000;
+  position: relative;
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+#points {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
+#rank {
+  display: flex;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
 #menu {
-    position: absolute;
+  cursor: pointer;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+#menu1 {
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+}
+#menu2 {
+  width: 17px;
+  height: 2px;
+  background-color: #fff;
+}
+#menu3 {
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
 }
 
 #themeToggle {
-    position: absolute;
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
 
 #content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
 }
 
 #music {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  gap: 30px;
 }
 
 #musicPhoto {
-    overflow: hidden;
-    border-radius: 100%;
-    width: 400px;
-    height: 400px;
-    padding: 10px;
-    background-color: #424242;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  overflow: hidden;
+  border-radius: 100%;
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  background-color: #424242;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #musicPhoto #photo {
-    border-radius: 100%;
-    width: 390px;
+  border-radius: 100%;
+  width: 390px;
+  z-index: 1;
 }
 
 #progressbar {
-    background-color: #424242;
-    width: 100%;
-    height: 5px;
-    border-radius: 2px;
-    overflow: hidden;
+  background-color: #424242;
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+  overflow: hidden;
 }
 
 #progress {
-    height: 100%;
-    width: 5%;
-    background-color: #00ff48;
+  height: 100%;
+  width: 5%;
+  background-color: #00ff48;
 }
 
 i#pauseButton {
-    background-color: #424242;
-    display: flex;
-    width: 40px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
+  background-color: #00ff48;
+  color: #1a1a1a;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
 }
 
-#animate {
-    background-color: #dc143c;
-    width: 40px;
-    height: 500px;
+#back {
+  background-color: #00ff48;
+  position: absolute;
+  width: 40px;
+  height: 500px;
+}
+
+.animate {
+  animation: animate 4s linear infinite;
+}
+
+#back.animate {
+  animation: animate 2s linear infinite;
+}
+
+.overflow {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 100%;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
