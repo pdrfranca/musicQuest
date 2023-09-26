@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Quizz</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="themeToggle"><i class="fa-sharp fa-solid fa-moon"></i></div>
+    <div id="menu">
+        <div id="menu1"></div>
+        <div id="menu2"></div>
+        <div id="menu3"></div>
+        <div id="constrols"></div>
+    </div>
+    <div id="content">
+        <div id="music">
+            <div id="musicPhoto">
+                <div id="animate"></div>
+                <img src="https://i.scdn.co/image/ab67616d0000b2736a0eecc5d63cac39fe7132b6" alt="" id="photo">
+            </div>
+            <div class="flex">
+                <div>
+                    <h1 id="musicName">Longe de você</h1>
+                    <h2>Charlie Brown</h2>
+                </div>
+                <div class="space">
+                    <i id="curtir" class="fa-sharp fa-solid fa-heart"></i>
+                    <i id="pauseButton" class="fa-sharp fa-solid fa-pause"></i>
+                </div>
+            </div>
+            <div id="controls">
+                <div id="progressbar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+        </div>
+        <div id="quest" class="none">
+            <h3 id="quest1">Qual é a música?</h3>
+            <h3 id="quest2" class="none">Qual é o autor?</h3>
+            <h3 id="quest3" class="none">Qual é o gênero?</h3>
+            <input placeholder="Música?" type="text" id="req1">
+            <input placeholder="Autor?" type="text" id="req2" class="none">
+            <input placeholder="Gênero?" type="text" id="req3" class="none">
+        </div>
+    </div>
+    <script src="assets/js/function.js"></script>
+</body>
+
+</html>
