@@ -1,5 +1,6 @@
 const heart = document.querySelector('.fa-heart')
 const pause = document.querySelector('#pauseButton')
+const back = document.querySelector('#back')
 
 heart.onclick = function () {
     heart.classList.toggle('fa-beat')
@@ -8,5 +9,6 @@ heart.onclick = function () {
 
 pause.onclick = function () {
     pause.classList.toggle('fa-play')
-    pause.classList.toggle('fa-pause')
+    back.
+        pause.classList.toggle('fa-pause')
 }
